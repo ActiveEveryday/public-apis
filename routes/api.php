@@ -2,7 +2,7 @@
 
 // use App\Http\Controllers\Apis\V1\UserApiController;
 
-use App\Http\Controllers\Api\V1\UserApiController;
+use App\Http\Controllers\Api\v1\UserApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
