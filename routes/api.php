@@ -1,10 +1,8 @@
 <?php
 
-// use App\Http\Controllers\Apis\V1\UserApiController;
-
-use App\Http\Controllers\Api\v1\UserApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/',[UserApiController::class,'forRecycler']);
+Route::get('/recycler',[UserApiController::class,'forRecycler']);
