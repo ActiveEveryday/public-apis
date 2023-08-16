@@ -18,4 +18,7 @@ use App\Http\Controllers\UserApiController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/recycler',[UserApiController::class,'forRecycler']);
+
+Route::prefix('v1')->group(function(){
+    Route::get('/recycler',[UserApiController::class,'forRecycler']);
+});
