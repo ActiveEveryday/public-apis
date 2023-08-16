@@ -23,6 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/',function(){
     return "hello";
 });
-Route::prefix('v1')->group(function(){
+Route::prefix('/v1')->group(function(){
     Route::get('/recycler',[UserApiController::class,'forRecycler']);
 });
